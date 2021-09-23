@@ -1,0 +1,215 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width", initial-scale=1.0> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+  
+<title></title>
+</head>
+<body>
+
+   
+
+
+    <header>
+    
+        <a href="index.html" class="header-brand">Grand Media Print</a>
+        <a href="#" class="header-brand2">Some describing words</a>
+        <nav>
+            <ul class="sidebar-nav">
+                <li><a href="index.html">Despre noi</a></li>
+                <li><a href="portofoliu.html">Portofoliu</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+
+            </ul>
+        </nav>
+    
+    </header>
+
+
+<div class="contact">
+<div class="wrapper">
+    <div class="message-form">  
+        <p>Contact</p> 
+        <input type="text" class="form-control" id="fname" placeholder="nume" name="fname" required="">
+        <input type="text" class="form-control" id="email" placeholder="email" name="email" required="">
+        <textarea id="subject" class="form-control" name="subject" placeholder="mesaj" style="height:100px"></textarea>
+        <button type="submit" class="send-btn">Trimite</button>
+    </div><!--login-form--> 
+</div><!--wrapper-->
+</div><!--contact-->
+
+
+
+
+</body>
+</html>
+<style>
+
+*{
+margin: 0;
+padding: 0;
+}
+
+a:hover{
+color: #e29578;
+}
+
+header{
+background-color: #35312d;
+width: 100%;
+height: 120px;
+}
+header .header-brand{
+font-size: 24px;
+font-weight: 500;
+color:white;
+text-transform: uppercase;
+display: inline-block;
+margin:0;
+text-align: left;
+padding:20px;
+padding-bottom: 10px!important;
+text-decoration: none;
+letter-spacing: 12px;
+}
+header .header-brand2{
+font-size: 14px;
+font-weight: 100;
+color:white;
+display:block;
+margin:0;
+text-align: left;
+padding:0 20px; 
+text-decoration: none;
+}
+header nav{
+padding-right: 20px;
+display: inline-block;
+float: right;
+margin-top:0!important;
+}
+header nav ul{
+display: block;
+margin:0;
+width:fit-content;
+}
+header nav ul li{
+display: inline-block;
+float: center;
+list-style: none;
+padding: 0;
+}
+header nav ul li a{
+font-size: 16px;
+font-weight: 200px;
+color: white;
+text-decoration: none; 
+padding: 20px;
+padding-top: 0!important;  
+}
+header nav ul li a:hover{
+text-decoration: none;   
+}
+
+
+.wrapper{
+margin: 3vw 27vw;
+}    
+
+.contact{
+    padding: 5%; 
+}
+
+.contact{
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('newspaper.jpg');
+background-position: center;
+background-size: cover;
+height: calc(100vh - 120px);
+}
+
+.message-form{
+  background: white;
+  padding: 30px;
+  height: auto;
+  border-radius: 4px;
+  border-bottom-style: solid;
+  border-bottom-color: #007f5f;
+ 
+}
+
+.message-form p{
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  padding-bottom: 30px;
+ 
+}
+
+.form-control{
+    border: none;/*remove box of input & textarea*/
+    border-bottom: 1px solid #b7b7a4;
+    border-radius: 0;
+}
+.send-btn{
+  background: #007f5f; 
+  width: 45%;
+  border: none;
+  color: white;
+  margin: 25px auto;
+  display: block;
+  padding: 12px 0; 
+  border-radius: 2px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+    
+@media screen and (max-width: 500px) {
+header{
+   height: 170px;
+}
+
+header .header-brand2{
+   display:none;
+}
+
+header nav{
+   padding-top: 20px;
+   display: inline-block;
+   float: center;
+   margin-top:0!important;
+}
+
+header .header-brand{
+    letter-spacing: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+.message-form{
+      margin-top: 10px!important;
+      width: 90vw;
+      float: center; 
+}
+.wrapper{
+  width: 80vw;
+  margin: 0!important;
+  float: center; 
+}  
+  
+.message-form p{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contact{
+height: calc(100vh - 170px);
+}
+}
+</style>

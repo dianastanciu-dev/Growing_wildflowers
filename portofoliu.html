@@ -1,0 +1,374 @@
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width", initial-scale=1.0> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+<link rel="stylesheet" href="gallery.css"
+<title></title>
+</head>
+<body>
+
+    
+    <header>
+    
+        <a href="index.html" class="header-brand">Grand Media Print</a>
+        <a href="#" class="header-brand2">Some describing words</a>
+        <nav>
+            <ul class="sidebar-nav">
+                <li><a href="index.html">Despre noi</a></li>
+                <li><a href="portofoliu.html">Portofoliu</a></li> 
+                <li><a href="contact.html">Contact</a></li> 
+
+            </ul>
+        </nav>
+    
+    </header>
+<section class="wrapper" id="index-gallery">
+
+ <h5>Portofoliu</h5>
+      <div class="gallery-img img1">
+        <div><a href="#">Brand name</a></div>
+      </div>
+
+      <div class="gallery-img img2">
+        <div><a href="#">Brand name</a></div>
+      </div>
+
+      <div class="gallery-img img3">
+        <div><a href="#">Brand name</a></div>
+      </div>
+
+      <div class="gallery-img img4">
+        <div><a href="#">Brand name</a></div>
+      </div>
+
+      <div class="gallery-img img5">
+        <div><a href="#">Brand name</a></div>
+      </div>
+
+      <div class="gallery-img img6">
+        <div><a href="#">Brand name</a></div>
+      </div>
+
+      <div class="gallery-img img7">
+        <div><a href="#">Brand name</a></div>
+      </div>
+
+      <div class="gallery-img img8">
+        <div><a href="#">Brand name</a></div>
+      </div>
+
+      <div class="gallery-img img9">
+        <div><a href="#">Brand name</a></div>
+      </div>
+    </section>
+
+
+<section class="footer_image" id="footer">
+    <div>
+      <ul>
+          <li style="font-weight: 600;">
+            Punct de lucru
+          </li>
+          <li>
+              ....(adresa)
+          </li>
+          <li style="font-weight: 600;">
+            Telefon
+          </li>
+          <li>
+            ....(telefon)
+          </li>
+          <li style="font-weight: 600;">
+            Email
+          </li>
+          <li>
+            ....(email)
+          </li>
+      </ul>
+    	
+    </div>
+
+</section>
+
+<style>
+
+        *{
+        margin: 0;
+        padding: 0;
+        } 
+
+         a:hover{
+       color: #e29578;
+    }
+
+        header{
+        background-color: #35312d;
+        width: 100%;
+        height: 120px;
+        }
+        header .header-brand{
+        font-size: 24px;
+        font-weight: 500;
+        color:white;
+        text-transform: uppercase;
+        display: inline-block;
+        margin:0;
+        text-align: left;
+        padding:20px;
+        padding-bottom: 10px!important;
+        text-decoration: none;
+        letter-spacing: 12px;
+        }
+        header .header-brand2{
+        font-size: 14px;
+        font-weight: 100;
+        color:white;
+        display:block;
+        margin:0;
+        text-align: left;
+        padding:0 20px; 
+        text-decoration: none;
+        }
+        header nav{
+        padding-right: 20px;
+        display: inline-block;
+        float: right;
+        margin-top:0!important;
+        }
+        header nav ul{
+        display: block;
+        margin:0;
+        width:fit-content;
+        }
+        header nav ul li{
+        display: inline-block;
+        float: center;
+        list-style: none;
+        padding: 0;
+        }
+        header nav ul li a{
+        font-size: 16px;
+        font-weight: 200px;
+        
+        color: white;
+        text-decoration: none; 
+        padding: 20px;
+        padding-top: 0!important;  
+        }
+        header nav ul li a:hover{
+        text-decoration: none;   
+        }
+
+
+.wrapper{
+   margin: 0 10vw;
+}
+
+.wrapper h5{
+    text-align: center;
+    text-transform: uppercase;
+    color:#b7b7a4;
+    margin: 5%;
+    letter-spacing: 6px;
+    
+}
+
+#index-gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "title title title"
+    "img1 img2 img3"
+    "img4 img5 img5"
+    "img6 img5 img5"
+    "img7 img8 img9";
+}
+
+
+#index-gallery .gallery-img{
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+#index-gallery h5{
+    grid-area: title;
+}
+
+#index-gallery .img1{
+   grid-area: img1;
+   background-image: url(img/thumbs/img1.jpg);
+}
+
+
+#index-gallery .img2{
+   grid-area: img2;
+   background-image: url(img/thumbs/img2.jpg);
+}
+
+
+#index-gallery .img3{
+   grid-area: img3;
+   background-image: url(img/thumbs/img3.jpg);
+}
+
+
+#index-gallery .img4{
+   grid-area: img4;
+   background-image: url(img/thumbs/img4.jpg);
+}
+
+#index-gallery .img5{
+   grid-area: img5;
+   background-image: url(img/thumbs/img5.jpg);
+   height: 610px;
+   width: 100%;
+}
+
+#index-gallery .img6{
+   grid-area: img6;
+   background-image: url(img/thumbs/img6.jpg);
+}
+
+#index-gallery .img7{
+   grid-area: img7;
+   background-image: url(img/thumbs/img7.jpg);
+}
+
+#index-gallery .img8{
+   grid-area: img8;
+   background-image: url(img/thumbs/img8.jpg);
+}
+
+#index-gallery .img9{
+   grid-area: img9;
+   background-image: url(img/thumbs/img9.jpg);
+}
+.gallery-img div{
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-img div:hover{
+    opacity: 0.7;
+    
+}
+
+.gallery-img a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+   
+}
+
+
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+.footer_image{
+margin-top: 20vh;    
+width: 130%;
+float: right;
+height: 45vh;
+/*background-image: url('newspaper.jpg');*/
+display: table;
+bottom: 0;
+position: relative;
+background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('newspaper.jpg');
+background-repeat: no-repeat;
+background-position: bottom;
+background-size: cover;
+}
+
+
+#footer ul{
+    width: 60%;
+    padding: 60px 0;
+    padding-left: 30%!important;
+    padding-right: 5%;
+    color: white;
+    float: right;
+    list-style-type: none;  
+}
+
+
+#footer ul li{
+    padding: 10px 0; 
+}
+
+
+
+
+
+@media screen and (max-width: 500px) {
+header{
+   height: 170px;
+}
+
+header .header-brand2{
+   display:none;
+}
+
+header nav{
+   padding-top: 20px;
+   display: inline-block;
+   float: center;
+   margin-top:0!important;
+}
+
+header .header-brand{
+    letter-spacing: 8px;
+    }
+
+.wrapper{
+   margin: 0 5vw;
+}
+
+#index-gallery{
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "img1"
+    "img2"
+    "img3"
+    "img4"
+    "img5"
+    "img6"
+    "img7"
+    "img8"
+    "img9";
+}
+
+#index-gallery .img5{
+   height: 300px;
+   width: 100%;
+}
+
+
+
+.footer_image{
+height: 30vh;
+}
+
+}
+</style>
+<!--<script src="js/gallery.js"></script>-->
+<script src="gallery.js"></script>
+
+
+</body>
+
+</html>
